@@ -2,6 +2,7 @@ const accountId = 123456;
 let accountGmail = "mkb@gmail.com"
 var accountPassword = "mkb@1234"
 accoutCity = "New York" 
+let accountstate;
 
 //change the value of variables
 
@@ -21,4 +22,4 @@ prefer to not use var because of it makes issue in block scope
 //console.log(accountGmail);
 //console.log(accountPassword);
 //console.log(accoutCity);
-console.table([accountId, accountGmail, accountPassword, accoutCity]);
+console.table([accountId, accountGmail, accountPassword, accoutCity,accountstate]);
