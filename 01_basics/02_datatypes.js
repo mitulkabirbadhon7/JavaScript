@@ -28,5 +28,9 @@ console.log("type of name is =",typeof name) // this is how we check datatype
  data type of undefined is = undefined
 
  important for interview questions
+
+ 
 */
+
+
 
