@@ -29,3 +29,26 @@ let value6 = true
 let convvalue6 = Number(value6)
 console.log(convvalue6) // 1
 console.log(typeof convvalue6) // number
+
+
+// converting number to boolean
+let isloggedIn = 1
+
+let booleanValue = Boolean(isloggedIn)
+console.log(booleanValue) // true
+console.log(typeof booleanValue) // boolean
+
+//short note 
+// "33" => 33
+// "33abc" => NaN
+// null => 0
+// undefined => NaN
+// true => 1
+// false => 0
+//""=> false
+//"abcmkb" => true
+
+let scrore = 11
+let scoreinString = String(scrore)
+console.log(scoreinString)
+console.log(typeof scoreinString)
