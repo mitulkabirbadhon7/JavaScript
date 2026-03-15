@@ -1,0 +1,4 @@
+sudo apk add --no-cache nodejs npm
+
+
+ex : node 01_basics/test.js
