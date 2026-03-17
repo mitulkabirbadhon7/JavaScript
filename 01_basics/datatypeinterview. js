@@ -27,7 +27,7 @@ let myObj = {
     name: "Badhon",
     age: 22,
 }
-console.log(myObj.name());
+console.log(myObj.name);
 
 const myFunction = function(){
     console.log("Hello world");
