@@ -13,7 +13,7 @@ function multiply(a,b){
 
 // Arrow Function => short way to write functions in modern JavaScript (ES6 and later)
 
-const ArrowSum = (a,b) => { // it does not mean that ArrowSum store the value of sum function when ArrowSum is called it will execute the code inside the function and return the result
+const ArrowSum = (a,b) => { 
     return a + b;
 }
 
