@@ -6,7 +6,7 @@
 
 # solution code
 
-## project 1
+## project 1: Change Background Color based on Box click 
 
 ``` Javascript 
 
@@ -42,7 +42,7 @@ buttons.forEach(function (button){
 
 # solution code
 
-## project 2
+## project 2 : Dsiplay BMI Info
 
 ``` Javascript 
 const form = document.querySelector('form');
@@ -80,5 +80,25 @@ form.addEventListener('submit', function (e) {
 });
 
 
+```
+
+# Solution Code 
+## Project 3 : Local Clock Display
+
+```JavaScript
+
+const clock =document.getElementById('clock')
+//const clock=document.querySelector('#clock') Select Any of these result will be same 
+
+/*
+writting Structure will be 
+
+setInterval(function(){},1000) then unfold {} --> here 1000 for 1 sec , 2000 for 2 sec 
+*/
+setInterval(function(){
+  let date = new Date()
+  //console.log(date.toLocaleTimeString());
+  clock.innerHTML = date.toLocaleTimeString();
+},1000)
 
 ```
