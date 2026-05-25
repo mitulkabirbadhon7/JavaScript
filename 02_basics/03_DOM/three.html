@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit And Remove In Dom</title>
+</head>
+<style>
+    body{
+        background-color: #212121;
+        color: aliceblue;
+    }
+</style>
+<body>
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+
+    function addLanguage(langName){
+
+        const li = document.createElement('li')
+        li.innerText =`${langName}`
+        document.querySelector('.language').appendChild(li)
+        
+    }
+    addLanguage("python")
+    addLanguage("c++")
+    //better approach 
+    function optimizedaddlang(langName){
+
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+
+    optimizedaddlang("TypeScripts")
+
+
+    /*lang now :
+    javascript
+    python
+    c++
+    typescripts
+    */ 
+
+    //edit : replace 2nd lang with badhon
+
+    const secondlang = document.querySelector("li:nth-child(2)")//select 2nd lang
+    //way1 
+    //secondlang.innerHTML = "badhon"
+
+    //way 2
+
+    const newli =document.createElement('li')
+    newli.appendChild(document.createTextNode("Badhon"))
+    secondlang.replaceWith(newli)
+
+
+   // edit : 1st lang replace with python
+    const firstlang=document.querySelector("li:nth-child(1)") //select 1st lang
+    const newli2= document.createElement('li')
+    newli2.appendChild(document.createTextNode("python"))
+    firstlang.replaceWith(newli2)
+
+
+    //remove last lang
+
+    const lastlang = document.querySelector('li:last-child')
+    lastlang.remove()
+    
+
+</script>
+</html>
