@@ -1,0 +1,12 @@
+body{
+    background-color: #292727;
+    color: aliceblue;
+}
+
+div{
+    height: 50px;
+    width: 100px;
+    background-color: #fff;
+    border: 1px solid black;
+    color: black;
+}
