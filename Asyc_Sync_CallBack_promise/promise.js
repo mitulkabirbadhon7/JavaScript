@@ -18,6 +18,5 @@ function getData(dataId,getnextData){
         }    
     },5000);
     })
-
     
 }
